@@ -1,6 +1,4 @@
 import styled from "styled-components";
-import Colors from "../../styles/Colors";
-import Fonts from "../../styles/Fonts";
 
 export const HeaderContainer = styled.header`
     background-color: #131313;
