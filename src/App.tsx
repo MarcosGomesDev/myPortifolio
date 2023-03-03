@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from './components/Footer';
 import Header from './components/Header';
 import About from './pages/About';
 import Highlight from './pages/Highlight';
@@ -32,6 +33,7 @@ function App() {
       <About ref={about} />
       <Highlight />
       <Qualifications ref={qualifications} />
+      <Footer />
     </>
   );
 }
