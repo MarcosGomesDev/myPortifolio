@@ -30,7 +30,7 @@ const Highlight: React.FC = () => {
                 <PlusText>+</PlusText>
                 <TextNumber>10</TextNumber>
                 </TextContainer>
-                <Description>Cursos full-stack concluídos</Description>
+                <Description>Cursos concluídos</Description>
             </Content>
         </Container>
     )
