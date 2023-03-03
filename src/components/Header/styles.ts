@@ -4,22 +4,28 @@ export const HeaderContainer = styled.header`
     background-color: #131313;
     width: 100%;
     height: 8rem;
-    margin: 0 auto;
-    padding: 0 2rem;
+    z-index: 10000;
     position: fixed;
-    z-index: 9999999;
+    top: 0;
 `;
 
 export const HeaderContent = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 8rem;
+    position: relative;
+    padding: 0 2rem;
 `;
 
 export const MenuHeader = styled.nav`
     display: flex;
     height: 8rem;
     align-items: center;
+
+    @media (max-width: 1366px) {
+        display: none;
+    }
 `;
 
 export const MenuOption = styled.button`

@@ -128,4 +128,10 @@ export const GlobalStyles = createGlobalStyle`
         font-size: 62.5%;
         scroll-behavior: smooth;
     }
+
+    @media (max-width: 430px) {
+        html {
+            font-size: 60%;
+        }
+    }
 `

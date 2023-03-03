@@ -6,6 +6,7 @@ export const FooterContainer = styled.footer`
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
 `;
 
 export const Title = styled.h2`

@@ -18,6 +18,10 @@ export const Title = styled.h2`
     font-size: 3.5rem;
     max-width: 60rem;
     margin: 0 auto;
+
+    @media (max-width:430px) {
+        font-size: 2.8rem;
+    }
 `;
 
 interface ButtonProps {

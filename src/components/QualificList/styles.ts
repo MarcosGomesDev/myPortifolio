@@ -2,6 +2,11 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     margin-top: 5rem;
+
+    @media (max-width: 640px) {
+        width: 31rem;
+        margin: 0 auto;
+    }
 `;
 
 export const List = styled.ul`
@@ -17,6 +22,12 @@ export const List = styled.ul`
         width: 2px;
         height: 100%;
         background-color: #474747;
+    }
+
+    @media (max-width: 640px) {
+        ::before {
+            left: -.7rem;
+        }
     }
 `;
 
@@ -57,5 +68,22 @@ export const ListItem = styled.li`
         background-color: #2ef8a0;
         box-shadow: .1rem 0rem 1rem .1rem #2ef8a0;
         border-radius: 100%;
+    }
+
+    @media (max-width: 640px) {
+        margin-right: 0;
+        left: 0;
+
+        &.left {
+            left: 0;
+        }
+
+        &.left::after {
+            left: -1rem;
+        }
+
+        ::after {
+            left: -1rem;
+        }
     }
 `;

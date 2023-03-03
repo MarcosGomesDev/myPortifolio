@@ -10,8 +10,8 @@ const Home = React.forwardRef<HTMLElement, Props>(({onClick}, ref) => {
     return (
         <Container ref={ref}>
             <Highlight>Codificando ideias em resultados</Highlight>
-            <SubTitle>Olá, eu sou <InsideText>Marcos</InsideText></SubTitle>
-            <Title>Full-stack Developer</Title>
+            <Title>Olá, eu sou <InsideText>Marcos</InsideText></Title>
+            <SubTitle>Full-stack Developer</SubTitle>
             <Description>Explore meu portfólio e veja como minhas linhas de código podem transformar ideias em soluções digitais incríveis.</Description>
             <Button onClick={onClick}>Saiba mais</Button>
 
