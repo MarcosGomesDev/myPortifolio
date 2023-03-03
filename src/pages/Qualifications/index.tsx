@@ -1,28 +1,43 @@
-import React, { forwardRef } from 'react'
+import React, { forwardRef, useEffect, useState } from 'react'
 import { Button, ButtonContainer, Container, Header, Text, Title } from './styles'
 import { FaAward, FaBriefcase } from 'react-icons/fa'
-
-interface Props {
-    id: string
-}
+import QualificList from '../../components/QualificList'
 
 const Qualifications = forwardRef<HTMLElement>((props, ref) => {
+    const [showCourses, setShowCourses] = useState(true)
+
+    const changeContent = () => {
+        setShowCourses(!showCourses)
+    }
+
     return (
         <Container ref={ref}>
             <Header>
                 <Title>Minhas qualificações e experiências</Title>
             </Header>
-
             <ButtonContainer>
-                <Button active={true}>
+                <Button
+                    active={showCourses}
+                    onClick={() => showCourses !== true && changeContent()}
+                >
                     <FaAward /> 
                     <Text>Qualificações</Text>
                 </Button>
-                <Button active={false}>
+                <Button
+                    active={!showCourses}
+                    onClick={() => showCourses !== false && changeContent()}
+                >
                     <FaBriefcase /> 
                     <Text>Experiências</Text>
                 </Button>
             </ButtonContainer>
+
+            {showCourses ? (
+                <QualificList />
+            ) : (
+                <></>
+            )}
+            
         </Container>
     )
 })
