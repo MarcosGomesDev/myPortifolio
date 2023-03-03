@@ -34,7 +34,7 @@ export const Content = styled.div`
 export const Card = styled.div`
     width: 100%;
     min-width: 30rem;
-    max-width: 37rem;
+    max-width: 32rem;
     height: 25rem;
     padding: 2rem;
     border: .2rem solid #131313;
