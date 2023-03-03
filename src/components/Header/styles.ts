@@ -7,6 +7,7 @@ export const HeaderContainer = styled.header`
     margin: 0 auto;
     padding: 0 2rem;
     position: fixed;
+    z-index: 9999999;
 `;
 
 export const HeaderContent = styled.div`
@@ -23,7 +24,7 @@ export const MenuHeader = styled.nav`
 
 export const MenuOption = styled.button`
     font-family: 'InterRegular';
-    font-size: 16px;
+    font-size: 2rem;
     color: #fff;
     background: none;
     border: none;
@@ -35,6 +36,11 @@ export const MenuOption = styled.button`
         transition: ease 500ms;
         transform: scale(1.1);
     }
+`;
+
+export const Button = styled.button`
+    background-color: transparent;
+    cursor: pointer;
 `;
 
 export const Image = styled.img`

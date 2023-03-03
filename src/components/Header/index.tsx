@@ -1,5 +1,5 @@
 import React from 'react'
-import { HeaderContainer, Image, HeaderContent, MenuOption, MenuHeader } from './styles'
+import { HeaderContainer, Image, HeaderContent, MenuOption, MenuHeader, Button } from './styles'
 import Logo from '../../assets/icon.png'
 
 interface Props {
@@ -9,11 +9,13 @@ interface Props {
     onClickToService(): void,
 }
 
-const Header: React.FC<Props> = ({onClickToHome, onClickToAbout, onClickToQuality}) => {
+const Header: React.FC<Props> = ({ onClickToHome, onClickToAbout, onClickToQuality }) => {
     return (
         <HeaderContainer>
             <HeaderContent>
-                <Image src={Logo} />
+                <Button onClick={onClickToHome}>
+                    <Image src={Logo} />
+                </Button>
                 <MenuHeader>
                     <MenuOption onClick={onClickToHome}>Home</MenuOption>
                     <MenuOption onClick={onClickToAbout}>Sobre</MenuOption>
