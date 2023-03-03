@@ -42,6 +42,8 @@ export const Description = styled.p`
     text-align: center;
 `;
 
+
+
 export const Highlight = styled.p`
     display: inline;
     font-family: 'PoppinsRegular';
@@ -51,6 +53,7 @@ export const Highlight = styled.p`
     padding: .8rem;
     font-size: 1.4rem;
     text-transform: uppercase;
+    
 `;
 
 export const Button = styled.button`
