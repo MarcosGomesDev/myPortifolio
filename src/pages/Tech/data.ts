@@ -1,4 +1,5 @@
 import {FaBootstrap, FaCss3Alt, FaHtml5, FaJsSquare, FaNodeJs, FaReact} from 'react-icons/fa'
+import {SiMongodb, SiMysql, SiTypescript} from 'react-icons/si'
 
 export const techs: any = [
     {
@@ -33,6 +34,17 @@ export const techs: any = [
         title: 'Bootstrap',
         icon: FaBootstrap
     },
-    
+    {
+        title: 'Mongo DB',
+        icon: SiMongodb
+    },
+    {
+        title: 'MySQL',
+        icon: SiMysql
+    },
+    {
+        title: 'Typescript',
+        icon: SiTypescript
+    },
 ]
 
