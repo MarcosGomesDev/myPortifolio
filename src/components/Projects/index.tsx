@@ -3,9 +3,9 @@ import { Button, ButtonOutline, Card, CardContent, CardTitle, Container, Contain
 
 import Background from '../../assets/background.jpg'
 
-const Projects = forwardRef((props, ref) => {
+const Projects = forwardRef<HTMLElement>((props, ref) => {
     return (
-        <Container>
+        <Container ref={ref}>
             <Title>Projetos</Title>
             <Content>
                 <Card>

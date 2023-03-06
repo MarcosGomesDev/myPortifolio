@@ -1,13 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Button from './components/Button';
 import Footer from './components/Footer';
 import Header from './components/Header';
-import About from './pages/About';
-import Highlight from './pages/Highlight';
-import Home from './pages/Home';
-import Projects from './pages/Projects';
-import Qualifications from './pages/Qualifications';
-import Service from './pages/Service';
-import Tech from './pages/Tech';
+import About from './components/About';
+import Highlight from './components/Highlight';
+import Home from './components/Home';
+import Projects from './components/Projects';
+import Qualifications from './components/Qualifications';
+import Service from './components/Service';
+import Tech from './components/Tech';
 import { GlobalStyles } from './styles/GlobalStyles';
 
 function App() {
@@ -19,6 +20,17 @@ function App() {
   const projects = React.useRef<HTMLElement | null>(null)
   const contact = React.useRef<HTMLElement | null>(null)
 
+  const [activeElement, setActiveElement] = useState<boolean>(false)
+
+  const ScrollOn = () => {
+    if(window.scrollY >= 4000) {
+      setActiveElement(true)
+    } else {
+      setActiveElement(false)
+    }
+  }
+
+  window.addEventListener('scroll', ScrollOn)
 
   const scrollToSection = (elementRef: any) => {
     window.scrollTo({
@@ -44,8 +56,9 @@ function App() {
       <Highlight />
       <Qualifications ref={qualifications} />
       <Service ref={service} />
-      <Tech />
-      <Projects />
+      <Tech ref={knowledge} />
+      <Projects ref={projects} />
+      <Button active={activeElement} onClick={() => scrollToSection(home)} />
       <Footer />
     </>
   );

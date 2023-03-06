@@ -57,6 +57,16 @@ export const Card = styled.div`
         opacity: 1;
         animation: Up 0.8s;
     }
+
+    @keyframes Up {
+        from {
+            opacity: 0;
+            transform: translateY(2rem);
+        }
+        to {
+            opacity: 1;
+        }
+    }
 `;
 
 export const CardTitle = styled.h3`
@@ -88,7 +98,7 @@ export const Button = styled.button<ButtonProps>`
     width: 10rem;
     height: 3rem;
     border-radius: .5rem;
-    background-color: ${({bg}) => bg ? bg : 'transparent'};
+    background-color: ${({ bg }) => bg ? bg : 'transparent'};
     border: 1px solid transparent;
     align-items: center;
     justify-content: center;
