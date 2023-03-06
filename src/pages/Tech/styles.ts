@@ -3,7 +3,8 @@ import styled from "styled-components";
 export const Container = styled.section`
     max-width: 140rem;
     margin: 0 auto;
-    padding: 9rem 2rem;
+    padding-top: 9rem !important;
+    padding: 0 2rem;
 `;
 
 export const Title = styled.h2`
@@ -32,7 +33,7 @@ export const Card = styled.div`
     padding-left: 2rem;
     font-size: 3rem;
     transition: all ease .3s;
-
+    
     :hover {
         border: 1px solid #2ef8a0;
         transform: scale(1.1);

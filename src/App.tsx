@@ -4,6 +4,7 @@ import Header from './components/Header';
 import About from './pages/About';
 import Highlight from './pages/Highlight';
 import Home from './pages/Home';
+import Projects from './pages/Projects';
 import Qualifications from './pages/Qualifications';
 import Service from './pages/Service';
 import Tech from './pages/Tech';
@@ -44,6 +45,7 @@ function App() {
       <Qualifications ref={qualifications} />
       <Service ref={service} />
       <Tech />
+      <Projects />
       <Footer />
     </>
   );
