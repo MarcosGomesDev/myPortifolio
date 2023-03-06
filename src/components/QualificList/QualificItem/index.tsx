@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Container, Date, Description, Header, Icon, Image, Title } from './styles'
+import { Container, Date, Description, Header, Icon, Image, Title } from './styles'
 
 import { FaCalendarCheck, FaGraduationCap } from 'react-icons/fa'
 
@@ -8,8 +8,6 @@ interface Props {
 }
 
 const QualificItem: React.FC<Props> = ({ data }) => {
-    const active = true
-
     return (
         <Container>
             <Header>
@@ -30,7 +28,6 @@ const QualificItem: React.FC<Props> = ({ data }) => {
                 <FaCalendarCheck style={{ marginRight: 5 }} />
                 {data.conclusion}
             </Date>
-            {/* <Button>Ver certificado</Button> */}
         </Container>
     )
 }

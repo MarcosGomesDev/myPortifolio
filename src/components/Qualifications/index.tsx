@@ -1,4 +1,4 @@
-import React, { forwardRef, useEffect, useState } from 'react'
+import React, { forwardRef, useState } from 'react'
 import { Button, ButtonContainer, Container, Header, Text, Title } from './styles'
 import { FaAward, FaBriefcase } from 'react-icons/fa'
 import QualificList from '../../components/QualificList'

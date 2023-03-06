@@ -16,13 +16,13 @@ const Home = React.forwardRef<HTMLElement, Props>(({onClick}, ref) => {
             <Button onClick={onClick}>Saiba mais</Button>
 
             <MenuSocial>
-                <ButtonIcon href='https://github.com/MarcosGomesDev' target='_blank' rel='noopener'>
+                <ButtonIcon onClick={() => window.open('https://github.com/MarcosGomesDev')}>
                     <FaGithub />
                 </ButtonIcon>
-                <ButtonIcon href='https://www.instagram.com/markkin_sg/' target='_blank' rel='noopener'>
+                <ButtonIcon onClick={() => window.open('https://www.instagram.com/markkin_sg/')}>
                     <FaInstagram />
                 </ButtonIcon>
-                <ButtonIcon href='https://www.linkedin.com/in/marcos-gomes-dev/' target='_blank' rel='noopener'>
+                <ButtonIcon onClick={() => window.open('https://www.instagram.com/markkin_sg/')}>
                     <FaLinkedin />
                 </ButtonIcon>
             </MenuSocial>

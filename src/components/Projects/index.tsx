@@ -13,7 +13,7 @@ const Projects = forwardRef<HTMLElement>((props, ref) => {
                     <Description>
                         <CardTitle>Landing Page</CardTitle>
                         <CardContent>
-                            <a href='https://github.com/MarcosGomesDev' target='_blank' rel='noopener'>
+                            <a onClick={() => window.open('https://github.com/MarcosGomesDev')}>
                                 <Button bg='#9900d3'>Github</Button>
                             </a>
                             <a>
@@ -24,7 +24,7 @@ const Projects = forwardRef<HTMLElement>((props, ref) => {
                 </Card>
             </Content>
             <ContainerButton>
-                <a href='https://github.com/MarcosGomesDev' target='_blank' rel='noopener'>
+                <a onClick={() => window.open('https://github.com/MarcosGomesDev')}>
                     <ButtonOutline>Abrir Github</ButtonOutline>
                 </a>
             </ContainerButton>
