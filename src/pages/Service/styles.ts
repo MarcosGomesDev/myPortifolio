@@ -40,6 +40,7 @@ export const Card = styled.div`
     border: .2rem solid #131313;
     border-radius: .5rem;
     transition: all ease .3s;
+    cursor: pointer;
 
     :hover {
         transform: scale(1.1);

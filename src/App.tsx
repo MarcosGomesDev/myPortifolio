@@ -6,6 +6,7 @@ import Highlight from './pages/Highlight';
 import Home from './pages/Home';
 import Qualifications from './pages/Qualifications';
 import Service from './pages/Service';
+import Tech from './pages/Tech';
 import { GlobalStyles } from './styles/GlobalStyles';
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
       <Highlight />
       <Qualifications ref={qualifications} />
       <Service ref={service} />
+      <Tech />
       <Footer />
     </>
   );

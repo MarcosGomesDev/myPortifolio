@@ -4,13 +4,10 @@ import { Container, List, ListItem } from './styles'
 import { courses } from './data'
 
 const QualificList = forwardRef<HTMLElement>((props, ref) => {
-    const active = true
-
     return (
         <Container>
             <List>
                 {courses.map((item, i) => (
-
                     <ListItem className={`li ${item.orientation ? 'right' : 'left'}`} key={i}>
                         <div >
                             <QualificItem data={item} />
