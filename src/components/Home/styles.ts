@@ -94,7 +94,8 @@ export const MenuSocial = styled.div`
     gap: 2rem;
 `;
 
-export const ButtonIcon = styled.a`
+export const ButtonIcon = styled.button`
+    background-color: transparent;
     font-size: 3rem;
     transition: all .3s;
     color: #fff;

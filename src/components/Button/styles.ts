@@ -16,5 +16,9 @@ export const Container = styled.button<Props>`
     cursor: pointer;
     font-size: 2rem;
     color: #fff;
-    display: ${({active}) => active ? 'block' : 'none'}
+    display: ${({active}) => active ? 'block' : 'none'};
+
+    @media (max-width: 700px) {
+        display: none;
+    }
 `;

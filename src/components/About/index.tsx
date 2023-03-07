@@ -24,17 +24,17 @@ const About = React.forwardRef<HTMLElement>((props, ref) => {
                     podemos marcar uma call atráves do meu e-mail que está disponibilizado.
                 </Text>
                 <ContainerButton>
-                    <Link>
+                    {/* <Link> */}
                         <ButtonCV>
                             Baixar CV
                             <FaDownload style={{marginLeft: 5}} />
                         </ButtonCV>
-                    </Link>
-                    <Link>
+                    {/* </Link> */}
+                    {/* <Link> */}
                         <ButtonEmail>
                             Enviar e-mail
                         </ButtonEmail>
-                    </Link>
+                    {/* </Link> */}
                 </ContainerButton>
             </ContainerAbout>
         </Container>

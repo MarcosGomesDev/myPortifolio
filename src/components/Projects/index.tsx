@@ -13,20 +13,19 @@ const Projects = forwardRef<HTMLElement>((props, ref) => {
                     <Description>
                         <CardTitle>Landing Page</CardTitle>
                         <CardContent>
-                            <a onClick={() => window.open('https://github.com/MarcosGomesDev')}>
-                                <Button bg='#9900d3'>Github</Button>
-                            </a>
-                            <a>
+                                <Button
+                                    onClick={() => window.open('https://github.com/MarcosGomesDev')}
+                                    bg='#9900d3'
+                                >
+                                    Github
+                                </Button>
                                 <Button bg='#2ef8a0'>Site</Button>
-                            </a>
                         </CardContent>
                     </Description>
                 </Card>
             </Content>
             <ContainerButton>
-                <a onClick={() => window.open('https://github.com/MarcosGomesDev')}>
-                    <ButtonOutline>Abrir Github</ButtonOutline>
-                </a>
+                <ButtonOutline onClick={() => window.open('https://github.com/MarcosGomesDev')}>Abrir Github</ButtonOutline>
             </ContainerButton>
         </Container>
     )
