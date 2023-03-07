@@ -2,8 +2,6 @@ import React, { useState } from 'react'
 import { HeaderContainer, Image, HeaderContent, MenuOption, MenuHeader, Button, ButtonMenu, ListMenu, IconButton, MenuMobile, ItemMenu } from './styles'
 import Logo from '../../assets/icon.png'
 
-import { AiOutlineMenu } from 'react-icons/ai'
-
 interface Props {
     onClickToHome(elementRef: any): void,
     onClickToQuality(): void
