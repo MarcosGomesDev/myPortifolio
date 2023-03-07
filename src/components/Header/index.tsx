@@ -1,6 +1,8 @@
-import React from 'react'
-import { HeaderContainer, Image, HeaderContent, MenuOption, MenuHeader, Button } from './styles'
+import React, { useState } from 'react'
+import { HeaderContainer, Image, HeaderContent, MenuOption, MenuHeader, Button, ButtonMenu, ListMenu, IconButton, MenuMobile, ItemMenu } from './styles'
 import Logo from '../../assets/icon.png'
+
+import { AiOutlineMenu } from 'react-icons/ai'
 
 interface Props {
     onClickToHome(elementRef: any): void,
@@ -12,7 +14,7 @@ interface Props {
     onClickToContact(): void
 }
 
-const Header: React.FC<Props> = ({ 
+const Header: React.FC<Props> = ({
     onClickToHome,
     onClickToAbout,
     onClickToQuality,
@@ -21,6 +23,8 @@ const Header: React.FC<Props> = ({
     onClickToProjects,
     onClickToContact
 }) => {
+    const [active, setActive] = useState<boolean>(false)
+
     return (
         <HeaderContainer>
             <HeaderContent>
@@ -36,7 +40,38 @@ const Header: React.FC<Props> = ({
                     <MenuOption onClick={onClickToProjects}>Projetos</MenuOption>
                     <MenuOption onClick={onClickToContact}>Contato</MenuOption>
                 </MenuHeader>
+
+                <MenuMobile className={active ? 'active' : ''}>
+                    <ButtonMenu onClick={() => setActive(!active)}>
+                        <IconButton />
+                    </ButtonMenu>
+                    <ListMenu>
+                        <ItemMenu>
+                            <MenuOption onClick={onClickToHome}>Home</MenuOption>
+                        </ItemMenu>
+                        <ItemMenu>
+                            <MenuOption onClick={onClickToAbout}>Sobre</MenuOption>
+                        </ItemMenu>
+                        <ItemMenu>
+                            <MenuOption onClick={onClickToQuality}>Qualificações</MenuOption>
+                        </ItemMenu>
+                        <ItemMenu>
+                            <MenuOption onClick={onClickToService}>Serviços</MenuOption>
+                        </ItemMenu>
+                        <ItemMenu>
+                            <MenuOption onClick={onClickToKnowledge}>Conhecimentos</MenuOption>
+                        </ItemMenu>
+                        <ItemMenu>
+                            <MenuOption onClick={onClickToProjects}>Projetos</MenuOption>
+                        </ItemMenu>
+                        <ItemMenu>
+                            <MenuOption onClick={onClickToContact}>Contato</MenuOption>
+                        </ItemMenu>
+                    </ListMenu>
+                </MenuMobile>
             </HeaderContent>
+
+
         </HeaderContainer>
     )
 }

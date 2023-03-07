@@ -52,4 +52,84 @@ export const Button = styled.button`
 export const Image = styled.img`
     width: 5rem;
     height: 5rem;
-`
+`;
+
+export const ButtonMenu = styled.button`
+    font-size: 1.8rem;
+    background-color: transparent;
+    cursor: pointer;
+`;
+
+export const IconButton = styled.span`
+    border-top: .2rem solid;
+    display: block;
+    color: #fff;
+
+    ::after, ::before {
+        content: '';
+        display: block;
+        width: 3rem;
+        height: .2rem;
+        background-color: currentColor;
+        margin-top: .5rem;
+        transition: .7s;
+        position: relative;
+    }
+`;
+
+export const ListMenu = styled.ul`
+    overflow-x: hidden;
+    width: 25rem;
+    height: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    background-color: #131313;
+    position: absolute;
+    top: 7.1rem;
+    right: 0rem;
+    overflow-y: hidden;
+    transition: .7s;
+    z-index: 10;
+`;
+
+export const ItemMenu = styled.li`
+    font-family: 'BarlowRegular';
+    font-size: 2rem;
+    color: #fff;
+    transition: all .3s;
+
+    :hover {
+        color: #2ef8a0;
+    }
+`;
+
+export const MenuMobile = styled.nav`
+    display: none;
+
+    @media (max-width: 1366px) {
+        display: block;
+    }
+
+    &.active ${ListMenu} {
+        height: 42rem;
+        padding: 4rem;
+        margin-top: 0.9rem;
+    }
+
+    &.active ${IconButton} {
+        border-top-color: transparent;
+    }
+
+    &.active ${IconButton}::before {
+        transform: rotate(135deg);
+    }
+
+    &.active ${IconButton}::after {
+        transform: rotate(-135deg);
+        top: -.7rem;
+    }
+
+
+`;
