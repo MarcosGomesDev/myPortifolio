@@ -1,5 +1,5 @@
 import React from 'react'
-import { ButtonCV, ButtonEmail, Container, ContainerAbout, ContainerButton, HighlightText, Image, Link, Text, Title } from './styles'
+import { ButtonCV, ButtonEmail, Container, ContainerAbout, ContainerButton, HighlightText, Image, Text, Title } from './styles'
 import { IoIosArrowForward } from 'react-icons/io'
 import { FaDownload } from 'react-icons/fa'
 import Perfil from '../../assets/me.png'
@@ -24,17 +24,13 @@ const About = React.forwardRef<HTMLElement>((props, ref) => {
                     podemos marcar uma call atráves do meu e-mail que está disponibilizado.
                 </Text>
                 <ContainerButton>
-                    {/* <Link> */}
-                        <ButtonCV>
-                            Baixar CV
-                            <FaDownload style={{marginLeft: 5}} />
-                        </ButtonCV>
-                    {/* </Link> */}
-                    {/* <Link> */}
-                        <ButtonEmail>
-                            Enviar e-mail
-                        </ButtonEmail>
-                    {/* </Link> */}
+                    <ButtonCV>
+                        Baixar CV
+                        <FaDownload style={{ marginLeft: 5 }} />
+                    </ButtonCV>
+                    <ButtonEmail>
+                        Enviar e-mail
+                    </ButtonEmail>
                 </ContainerButton>
             </ContainerAbout>
         </Container>
