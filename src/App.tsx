@@ -10,6 +10,7 @@ import Qualifications from './components/Qualifications';
 import Service from './components/Service';
 import Tech from './components/Tech';
 import { GlobalStyles } from './styles/GlobalStyles';
+import Contact from './components/Contact';
 
 function App() {
   const home = React.useRef<HTMLElement | null>(null)
@@ -58,6 +59,7 @@ function App() {
       <Service ref={service} />
       <Tech ref={knowledge} />
       <Projects ref={projects} />
+      <Contact ref={contact} />
       <Button active={activeElement} onClick={() => scrollToSection(home)} />
       <Footer />
     </>
